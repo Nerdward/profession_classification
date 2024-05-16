@@ -15,3 +15,8 @@ To improve the quality of the classification model, I used an embedding model to
 I tried out Xgboost and SVC models.
 The SVC beat the XGBoost model in its accuracy score (76%).
 It also perfomed in other metrics like precision, recall and f1-score. I saved the model [here](./data/model.pkl)
+
+## Inference
+To make inference with the model
+1. Make sure to download the embedding model
+2. Run the code at the inference part of the notebook
