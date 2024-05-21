@@ -63,7 +63,7 @@ def get_embeddings(texts: List[str], batch_size: int):
 def inference(df: pd.DataFrame):   
     df["comments"] = df["comments"].apply(clean_comments)
     
-    test_embeddings = get_embeddings(texts=df["comments"].tolist(), batch_size=64)
+    test_embeddings = get_embeddings(texts=df["comments"].tolist(), batch_size=4)
     test_embeddings_df = pd.DataFrame(test_embeddings)
     
     clf, encoder = load_artifacts()
